@@ -1,0 +1,132 @@
+:root {
+  --btn-color-1: green;
+  --btn-color-2: lightgreen;
+}
+
+#Grid {
+ 
+}
+
+#portrait {
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background: linear-gradient(to right, rgb(147, 219, 8), rgb(28, 229, 147));
+
+  &:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+button {
+  /* margin: 20px;
+  outline: none; */
+}
+.custom-btn {
+  width: 300px;
+  height: 60px;
+  padding: 10px 25px;
+  border: 2px solid #000;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.btn{
+  position: relative;
+  right: 20px;
+  bottom: 20px;
+  border:none;
+  width: 300px;
+  height: 60px;
+  line-height: 40px;
+  -webkit-perspective: 230px;
+  perspective: 230px;
+}
+.btn span {
+  color: var(--backColor);
+  background-color: var(--btn-color-1);
+  text-align: center;
+  padding-top: 10px;
+  text-decoration: none;
+  font-family: Courier New, Courier, monospace;
+  font-size: 36px;
+  font-weight: bold;
+
+  display: block;
+  position: absolute;
+  width: 300px;
+  height: 60px;
+  border-radius: 5px;
+  margin:0;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+.btn span:nth-child(1) {
+  background-color: var(--btn-color-2);
+  -webkit-transform: rotateX(90deg);
+  -moz-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  -webkit-transform-origin: 50% 50% -20px;
+  -moz-transform-origin: 50% 50% -20px;
+  transform-origin: 50% 50% -20px;
+}
+.btn span:nth-child(2) {
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  -webkit-transform-origin: 50% 50% -30px;
+  -moz-transform-origin: 50% 50% -30px;
+  transform-origin: 50% 50% -30px;
+}
+.btn:hover span:nth-child(1) {
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+.btn:hover span:nth-child(2) {
+  background: var(--btn-color-2);
+  color: var(--btn-color-2);
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+}
+
+#spinner {
+  animation: spin 16s linear infinite;
+  font-size: 100px;
+
+  &:hover {
+    animation-play-state: paused;
+    color: var(--accent2)
+  }
+}
+
+@keyframes spin {
+  0% { transform: rotate( 0.0deg) }
+  100% { transform: rotate(360.0deg) }
+}
