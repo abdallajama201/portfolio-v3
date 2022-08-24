@@ -1,10 +1,17 @@
 :root {
   --btn-color-1: green;
   --btn-color-2: lightgreen;
+  --header-background: aqua;
+  --header-bottom-line: black;
+  --spinner: green;
+  --spinner-hover: lightgreen;
+  --portrait-left: green;
+  --portrait-right: lightgreen;
 }
 
-#Grid {
- 
+#grid-header {
+  border-bottom: 2px solid var(--header-bottom-line);
+  background-color: var(--header-background);
 }
 
 #portrait {
@@ -12,7 +19,7 @@
   width: 100px;
   height: 100px;
   border-radius: 100%;
-  background: linear-gradient(to right, rgb(147, 219, 8), rgb(28, 229, 147));
+  background: linear-gradient(to right, var(--portrait-left), var(--portrait-right));
 
   &:hover {
     animation: shake 0.5s;
@@ -34,17 +41,16 @@
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
-button {
-  /* margin: 20px;
-  outline: none; */
+#Typography {
+  margin: 40px auto 0px;
+  font-weight: bold;
 }
+
 .custom-btn {
   width: 300px;
   height: 60px;
-  padding: 10px 25px;
+  padding: 10px 5px;
   border: 2px solid #000;
-  font-family: 'Lato', sans-serif;
-  font-weight: 500;
   background: transparent;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -69,10 +75,6 @@ button {
   text-align: center;
   padding-top: 10px;
   text-decoration: none;
-  font-family: Courier New, Courier, monospace;
-  font-size: 36px;
-  font-weight: bold;
-
   display: block;
   position: absolute;
   width: 300px;
@@ -119,10 +121,11 @@ button {
 #spinner {
   animation: spin 16s linear infinite;
   font-size: 100px;
+  color: var(--spinner);
 
   &:hover {
     animation-play-state: paused;
-    color: var(--accent2)
+    color: var(--spinner-hover)
   }
 }
 
