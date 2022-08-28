@@ -5,7 +5,6 @@ import Resume from './components/pages/Resume';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
-
 function App() {
   // Conditionally render page based on handelPageChange function
   const [currentPage, setCurrentPage] = useState('Home');
@@ -26,7 +25,7 @@ function App() {
     <div>
       <Header currentPage={currentPage} handlePageChange={handlePageChange}/>
       {renderPage()}
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

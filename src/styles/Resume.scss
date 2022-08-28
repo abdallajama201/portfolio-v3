@@ -1,15 +1,16 @@
+@import './index.scss';
 
 #grid-resume {
   max-width: 800px;
   margin: 30px auto;
 }
 
-#resume-section {
-  margin: 20px 0px;
+#download {
+  width: 60px;
+  height: 60px;
 }
 
-#resume-link {
-  max-width: 400px;
-  text-align: center;
-  margin: 0 auto;
+#resume-section {
+  margin: 20px 0px;
+  background-color: var(--resume-sec-background);
 }
