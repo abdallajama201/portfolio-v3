@@ -1,9 +1,13 @@
-:root {
+@import './index.scss';
 
-}
+$transition: all 250ms ease;
 
 #grid-home {
   margin: 20px auto;
+}
+
+#poster {
+  background-color: var(--poster-background);
 }
 
 #skyline {
@@ -13,9 +17,35 @@
 
 a {
   text-decoration: none;
-  color: black
+  color: black;
+}
+
+#links {
+  transition: $transition;
+
+  &:hover {
+    transform: translateY(-5px);
+    transition: $transition;
+  }
+}
+
+#section {
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+#icon {
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  background-color: var(--icon-back);
+}
+
+#key-skills {
+  background-color: var(--key-background);
 }
 
 #about-me {
   max-width: 900px;
+  background-color: var(--about-background);
 }

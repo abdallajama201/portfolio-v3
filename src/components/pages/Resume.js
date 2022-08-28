@@ -2,6 +2,8 @@ import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
+import Tooltip from '@mui/material/Tooltip';
+import download from '../../icons/download.png'
 import '../../styles/Resume.scss'
 
 const headings = ['Professional Summary','Technical Skills', 'Projects', 'Professional Experience', 'Education']
@@ -58,6 +60,11 @@ const sections = [professionalSummary, technicalSkills, projects, professionalEx
 export default function Resume() {
   return (
     <Grid id='grid-resume' container item xs={2} sm={4} md={20} direction="column" justifyContent="center">
+      <a href='https://drive.google.com/file/d/1zjCy_Q8ztUBDELvTKex_P9m_AxsVOMet/view?usp=sharing' target="_blank">
+        <Tooltip title='Link to pdf resume'>
+          <img src={download} id='download' alt='download link'></img>
+        </Tooltip>
+      </a>
       {sections.map((section, index1) =>
         <Card id='resume-section'>
           <CardContent>
@@ -68,11 +75,6 @@ export default function Resume() {
           </CardContent>
         </Card>
       )}
-      <Card id='resume-link'>
-        <CardContent>
-          <a href='https://drive.google.com/file/d/1zjCy_Q8ztUBDELvTKex_P9m_AxsVOMet/view?usp=sharing' target="_blank"><Typography variant='h3'>Download</Typography></a>
-        </CardContent>
-      </Card>
     </Grid>
   );
 }

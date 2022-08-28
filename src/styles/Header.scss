@@ -1,16 +1,6 @@
-:root {
-  --btn-color-1: green;
-  --btn-color-2: lightgreen;
-  --header-background: aqua;
-  --header-bottom-line: black;
-  --spinner: green;
-  --spinner-hover: lightgreen;
-  --portrait-left: green;
-  --portrait-right: lightgreen;
-}
+@import './index.scss';
 
 #grid-header {
-  border-bottom: 2px solid var(--header-bottom-line);
   background-color: var(--header-background);
 }
 
@@ -63,22 +53,22 @@
   right: 20px;
   bottom: 20px;
   border:none;
-  width: 300px;
-  height: 60px;
+  width: 250px;
+  height: 50px;
   line-height: 40px;
-  -webkit-perspective: 230px;
-  perspective: 230px;
+  -webkit-perspective: 200px;
+  perspective: 200px;
 }
 .btn span {
   color: var(--backColor);
   background-color: var(--btn-color-1);
   text-align: center;
-  padding-top: 10px;
+  padding-top: 5px;
   text-decoration: none;
   display: block;
   position: absolute;
-  width: 300px;
-  height: 60px;
+  width: 250px;
+  height: 50px;
   border-radius: 5px;
   margin:0;
   text-align: center;
@@ -93,17 +83,17 @@
   -webkit-transform: rotateX(90deg);
   -moz-transform: rotateX(90deg);
   transform: rotateX(90deg);
-  -webkit-transform-origin: 50% 50% -20px;
-  -moz-transform-origin: 50% 50% -20px;
-  transform-origin: 50% 50% -20px;
+  -webkit-transform-origin: 50% 50% -10px;
+  -moz-transform-origin: 50% 50% -10px;
+  transform-origin: 50% 50% -10px;
 }
 .btn span:nth-child(2) {
   -webkit-transform: rotateX(0deg);
   -moz-transform: rotateX(0deg);
   transform: rotateX(0deg);
-  -webkit-transform-origin: 50% 50% -30px;
-  -moz-transform-origin: 50% 50% -30px;
-  transform-origin: 50% 50% -30px;
+  -webkit-transform-origin: 50% 50% -27px;
+  -moz-transform-origin: 50% 50% -27px;
+  transform-origin: 50% 50% -27px;
 }
 .btn:hover span:nth-child(1) {
   -webkit-transform: rotateX(0deg);

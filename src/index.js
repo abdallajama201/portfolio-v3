@@ -7,4 +7,4 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import './styles/index.scss';
 
-ReactDOM.render(<div><App /></div>, document.getElementById('root'));
+ReactDOM.render(<div id='container'><App /></div>, document.getElementById('root'));

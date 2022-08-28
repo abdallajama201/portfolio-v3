@@ -1,3 +1,21 @@
+:root {
+  --backdrop: #E3E7F7;
+  --icon-back: white;
+  --btn-color-1: green;
+  --btn-color-2: lightgreen;
+  --header-background: aqua;
+  --footer-background: red;
+  --spinner: green;
+  --spinner-hover: lightgreen;
+  --portrait-left: green;
+  --portrait-right: lightgreen;
+  --project-background: purple;
+  --poster-background: blue;
+  --about-background: yellow;
+  --key-background: red;
+  --resume-sec-background: blue;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -40,5 +58,8 @@ html body {
   width: 100vw;
   max-width: 900px;
   padding: 1rem;
-  background-color: lightpink;
+}
+
+#container {
+  background-color: var(--backdrop);
 }

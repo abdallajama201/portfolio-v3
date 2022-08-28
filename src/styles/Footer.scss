@@ -1,0 +1,17 @@
+@import './index.scss';
+
+$transition: all 250ms ease;
+
+#grid-footer {
+  background-color: var(--footer-background);
+}
+
+#icons {
+  font-size: 60px;
+  transition: $transition;
+
+  &:hover {
+    transform: translateY(-5px);
+    transition: $transition;
+  }
+}
