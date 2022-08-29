@@ -78,7 +78,7 @@ export default function Projects() {
     <Grid id='grid-project' container item direction="column" justifyContent="center">
       <Card id='project-title'>
         <CardContent>
-            <Typography variant='h3' sx={{ fontWeight: 'bold' }}>Checkout some of my work 🚧</Typography>
+            <Typography variant='h4' sx={{ fontWeight: 'bold' }}>Checkout some of my work 🚧</Typography>
         </CardContent>
       </Card>
       <Grid id='grid-home' container item xs={2} sm={4} md={20} direction="row" justifyContent="center">
