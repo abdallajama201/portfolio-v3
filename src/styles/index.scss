@@ -1,19 +1,20 @@
 :root {
-  --backdrop: #E3E7F7;
+  --backdrop: white;
   --icon-back: white;
-  --btn-color-1: green;
-  --btn-color-2: lightgreen;
-  --header-background: aqua;
-  --footer-background: red;
-  --spinner: green;
-  --spinner-hover: lightgreen;
-  --portrait-left: green;
-  --portrait-right: lightgreen;
-  --project-background: purple;
-  --poster-background: blue;
-  --about-background: yellow;
-  --key-background: red;
-  --resume-sec-background: blue;
+  --btn-color-1: #58FAF6;
+  --btn-color-2: #40B8B6;
+  --header-background: #4CD9D6;
+  --footer-background: #4CD9D6;
+  --spinner: #58FAF6;
+  --spinner-hover: #40B8B6;
+  --portrait-left: #58FAF6;
+  --portrait-right: #40B8B6;
+  --project-background: #54F0ED;
+  --project-title-background: #54F0ED;
+  --poster-background: #54F0ED;
+  --about-background: #54F0ED;
+  --key-background: #54F0ED;
+  --resume-sec-background: #54F0ED;
 }
 
 html, body, div, span, applet, object, iframe,
