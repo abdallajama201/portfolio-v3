@@ -54,8 +54,8 @@ export default function Home() {
               <Typography variant='h4' sx={{ fontWeight: 'bold' }}>Im Abdalla, a Full Stack Developer.</Typography>
               <br></br>
               <Typography variant='h6' sx={{ fontWeight: 'bold' }}>🌎 Based out of Toronto, ON</Typography>
-              <Typography variant='h6' sx={{ fontWeight: 'bold' }}>🧙 Backend apprentice mage</Typography>
-              <Typography variant='h6' sx={{ fontWeight: 'bold' }}>👨‍🚀 Frontend intergalactic paladin</Typography>
+              <Typography variant='h6' sx={{ fontWeight: 'bold' }}>👨‍🚀 Backend intergalactic paladin</Typography>
+              <Typography variant='h6' sx={{ fontWeight: 'bold' }}>🧙 Frontend apprentice mage</Typography>
               <a href="mailto:abdallajama@gmail.com"><Typography id='links' variant='h6' sx={{ fontWeight: 'bold' }}>📮 abdallajama@gmail.com</Typography></a>
               <a href="https://www.linkedin.com/in/abdalla-jama/"><Typography id='links' variant='h6' sx={{ fontWeight: 'bold' }}><LinkedInIcon></LinkedInIcon>  LinkedIn</Typography></a>
               <a href="https://github.com/abdallajama201"><Typography id='links' variant='h6' sx={{ fontWeight: 'bold' }}><GitHubIcon></GitHubIcon>  Github</Typography></a>

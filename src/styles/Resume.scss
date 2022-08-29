@@ -1,5 +1,7 @@
 @import './index.scss';
 
+$transition: all 250ms ease;
+
 #grid-resume {
   max-width: 800px;
   margin: 30px auto;
@@ -8,6 +10,12 @@
 #download {
   width: 60px;
   height: 60px;
+  transition: $transition;
+
+  &:hover {
+    transform: translateY(-5px);
+    transition: $transition;
+  }
 }
 
 #resume-section {

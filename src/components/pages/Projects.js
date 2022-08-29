@@ -1,5 +1,6 @@
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';  
+import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import CardActions from '@mui/material/CardActions';
@@ -84,6 +85,7 @@ export default function Projects() {
       <Grid id='grid-home' container item xs={2} sm={4} md={20} direction="row" justifyContent="center">
         {projectNames.map((name, index) =>
           <Card key={index} id='projects'>
+            <CardHeader title={projectNames[index]}></CardHeader>
             <CardMedia component="img" height="300" image={images[index]} alt={name}></CardMedia>
             <CardContent>
               <Typography variant='body1'>{(description[index])[0]}</Typography>
