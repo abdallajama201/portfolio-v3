@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-v3/static/css/main.c5150862.css",
-    "main.js": "/portfolio-v3/static/js/main.b858fb17.js",
+    "main.css": "/portfolio-v3/static/css/main.83a3943c.css",
+    "main.js": "/portfolio-v3/static/js/main.c0102714.js",
     "static/media/coding-photo-2.jpg": "/portfolio-v3/static/media/coding-photo-2.861ddee1058b23ed1a22.jpg",
     "static/media/coding-photo-1.jpg": "/portfolio-v3/static/media/coding-photo-1.77663d10b2ed61d235f4.jpg",
     "static/media/coding-photo-3.jpg": "/portfolio-v3/static/media/coding-photo-3.645da6999d5b0b11ee31.jpg",
@@ -58,11 +58,11 @@
     "static/media/roboto-greek-ext-300-normal.woff2": "/portfolio-v3/static/media/roboto-greek-ext-300-normal.35b9d6be04b95f0f0530.woff2",
     "static/media/roboto-greek-ext-700-normal.woff2": "/portfolio-v3/static/media/roboto-greek-ext-700-normal.bd9854c751441ccc1a70.woff2",
     "index.html": "/portfolio-v3/index.html",
-    "main.c5150862.css.map": "/portfolio-v3/static/css/main.c5150862.css.map",
-    "main.b858fb17.js.map": "/portfolio-v3/static/js/main.b858fb17.js.map"
+    "main.83a3943c.css.map": "/portfolio-v3/static/css/main.83a3943c.css.map",
+    "main.c0102714.js.map": "/portfolio-v3/static/js/main.c0102714.js.map"
   },
   "entrypoints": [
-    "static/css/main.c5150862.css",
-    "static/js/main.b858fb17.js"
+    "static/css/main.83a3943c.css",
+    "static/js/main.c0102714.js"
   ]
 }
