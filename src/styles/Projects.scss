@@ -4,6 +4,8 @@
   max-width: 900px;
   margin: 20px auto;
   background-color: var(--project-title-background);
+  border: solid 5px var(--border-color);
+  border-radius: 20px;
 }
 
 #projects {
@@ -11,4 +13,11 @@
   max-width: 550px;
   min-width: 550px;
   margin: 20px auto;
+  border: solid 5px var(--border-color);
+  border-radius: 20px;
+}
+
+#card-image {
+  border-top: solid 5px var(--border-color);
+  border-bottom: solid 5px var(--border-color);
 }

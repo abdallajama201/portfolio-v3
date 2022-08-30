@@ -9,7 +9,25 @@ $transition: all 250ms ease;
 #poster {
   background-color: var(--poster-background);
   margin: 20px 0px;
+  border-top: solid 5px var(--border-color);
+  border-left: solid 5px var(--border-color);
+  border-bottom: solid 5px var(--border-color);
+  border-radius: 20px;
+  border-top-right-radius: 0%;
+  border-bottom-right-radius: 0%;
 }
+
+#poster1 {
+  background-color: var(--poster-background);
+  margin: 20px 0px;
+  border-top: solid 5px var(--border-color);
+  border-right: solid 5px var(--border-color);
+  border-bottom: solid 5px var(--border-color);
+  border-radius: 20px;
+  border-top-left-radius: 0%;
+  border-bottom-left-radius: 0%;
+}
+
 
 #skyline {
   width: 600px;
@@ -43,9 +61,13 @@ a {
 
 #key-skills {
   background-color: var(--key-background);
+  border: solid 5px var(--border-color);
+  border-radius: 20px;
 }
 
 #about-me {
   max-width: 900px;
   background-color: var(--about-background);
+  border: solid 5px var(--border-color);
+  border-radius: 20px;
 }

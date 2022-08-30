@@ -19,16 +19,6 @@ import '../../styles/Projects.scss'
 const projectNames = ['Hungry Time', 'Pet Playdate Finder', 'Tech Blog', 'Weather Dashboard', 'ECommerce Backend', 'Social Network API', 'README Generator'];
 const images = [image1, image2, image3, image4, image5, image6, image7];
 
-// const images = [
-//   'https://cdn.jsdelivr.net/gh/abdallajama201/portfolio-v3@main/src/img/hungry-time.png',
-//   'https://cdn.jsdelivr.net/gh/abdallajama201/portfolio-v3@main/src/img/pet-playdate.png',
-// 'https://cdn.jsdelivr.net/gh/abdallajama201/portfolio-v3@main/src/img/tech-blog.png',
-// 'https://cdn.jsdelivr.net/gh/abdallajama201/portfolio-v3@main/src/img/weather-dashboard.png',
-// 'https://cdn.jsdelivr.net/gh/abdallajama201/portfolio-v3@main/src/img/coding-photo-1.jpg',
-// 'https://cdn.jsdelivr.net/gh/abdallajama201/portfolio-v3@main/src/img/coding-photo-2.jpg',
-// 'https://cdn.jsdelivr.net/gh/abdallajama201/portfolio-v3@main/src/img/coding-photo-3.jpg',
-// ]
-
 const description = [
   [
     'A menu app platform.',
@@ -96,8 +86,8 @@ export default function Projects() {
       <Grid id='grid-home' container item xs={2} sm={4} md={20} direction="row" justifyContent="center">
         {projectNames.map((name, index) =>
           <Card key={index} id='projects'>
-            <CardHeader title={projectNames[index]}></CardHeader>
-            <CardMedia component="img" height="300" image={images[index]} alt={name}></CardMedia>
+            <CardHeader title={projectNames[index]} sx={{ textAlign: 'center' }}></CardHeader>
+            <CardMedia id='card-image' component="img" height="300" image={images[index]} alt={name}></CardMedia>
             <CardContent>
               <Typography variant='body1'>{(description[index])[0]}</Typography>
               <Typography variant='body1'>{(description[index])[1]}</Typography>
