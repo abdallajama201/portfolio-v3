@@ -21,4 +21,6 @@ $transition: all 250ms ease;
 #resume-section {
   margin: 20px 0px;
   background-color: var(--resume-sec-background);
+  border: solid 5px var(--border-color);
+  border-radius: 20px;
 }

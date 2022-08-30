@@ -14,18 +14,18 @@ export default function Footer() {
       </Grid>
       <Grid container item xs={2} direction="row" justifyContent="space-between" alignItems="right">
         <a href='https://github.com/abdallajama201' style={{color: "inherit"}}>
-          <Tooltip title='github.com/abdallajama201'>
-            <GitHubIcon id='icons' />
+          <Tooltip title='github.com/abdallajama201' alt='github.com/abdallajama201'>
+            <GitHubIcon id='icons' alt='github.com/abdallajama201' />
           </Tooltip>
         </a>
         <a href="https://www.linkedin.com/in/abdalla-jama/" style={{color: "inherit"}}>
-          <Tooltip title='linkedin.com/in/abdalla-jama'>
-            <LinkedInIcon id='icons' />
+          <Tooltip title='linkedin.com/in/abdalla-jama' alt='linkedin.com/in/abdalla-jama'>
+            <LinkedInIcon id='icons' alt='linkedin.com/in/abdalla-jama' />
           </Tooltip>
         </a>
         <a href="mailto:abdallajama@gmail.com" style={{color: "inherit"}}>
-          <Tooltip title='abdallajama@gmail.com'>
-            <EmailOutlinedIcon id='icons' />
+          <Tooltip title='abdallajama@gmail.com' alt='abdallajama@gmail.com'>
+            <EmailOutlinedIcon id='icons' alt='abdallajama@gmail.com'/>
           </Tooltip>
         </a>
       </Grid>

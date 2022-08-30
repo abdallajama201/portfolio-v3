@@ -55,7 +55,7 @@ export default function Home() {
               <img src={skyline} id='skyline' alt='skyline'></img>
           </CardContent>
         </Card>
-        <Card id='poster'>
+        <Card id='poster1'>
           <CardContent>
               <Typography variant='h3' sx={{ fontWeight: 'bold', textAlign: 'center' }}>Hi there 👋</Typography>
               <Typography variant='h4' sx={{ fontWeight: 'bold' }}>Im Abdalla, a Full Stack Developer.</Typography>
