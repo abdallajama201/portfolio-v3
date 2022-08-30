@@ -16,9 +16,20 @@ import image6 from '../../img/coding-photo-2.jpg';
 import image7 from '../../img/coding-photo-3.jpg';
 import '../../styles/Projects.scss'
  
-let projectNames = ['Hungry Time', 'Pet Playdate Finder', 'Tech Blog', 'Weather Dashboard', 'ECommerce Backend', 'Social Network API', 'README Generator'];
-let images = [image1, image2, image3, image4, image5, image6, image7];
-let description = [
+const projectNames = ['Hungry Time', 'Pet Playdate Finder', 'Tech Blog', 'Weather Dashboard', 'ECommerce Backend', 'Social Network API', 'README Generator'];
+const images = [image1, image2, image3, image4, image5, image6, image7];
+
+// const images = [
+//   'https://cdn.jsdelivr.net/gh/abdallajama201/portfolio-v3@main/src/img/hungry-time.png',
+//   'https://cdn.jsdelivr.net/gh/abdallajama201/portfolio-v3@main/src/img/pet-playdate.png',
+// 'https://cdn.jsdelivr.net/gh/abdallajama201/portfolio-v3@main/src/img/tech-blog.png',
+// 'https://cdn.jsdelivr.net/gh/abdallajama201/portfolio-v3@main/src/img/weather-dashboard.png',
+// 'https://cdn.jsdelivr.net/gh/abdallajama201/portfolio-v3@main/src/img/coding-photo-1.jpg',
+// 'https://cdn.jsdelivr.net/gh/abdallajama201/portfolio-v3@main/src/img/coding-photo-2.jpg',
+// 'https://cdn.jsdelivr.net/gh/abdallajama201/portfolio-v3@main/src/img/coding-photo-3.jpg',
+// ]
+
+const description = [
   [
     'A menu app platform.',
     'Backend: Express.js, MongoDB, GraphQL',
@@ -55,7 +66,7 @@ let description = [
     '',
   ],
 ];
-let github = [
+const github = [
   'https://github.com/Wingky1208/Menu-App',
   'https://github.com/abdallajama201/pet-playdate',
   'https://github.com/abdallajama201/Tech-Blog',
@@ -64,7 +75,7 @@ let github = [
   'https://github.com/abdallajama201/Social-Network-API',
   'https://github.com/abdallajama201/Professional-README-Generator',
 ]
-let deployed = [
+const deployed = [
   'https://hungrier-time.herokuapp.com/',
   'https://pet-playdate-app.herokuapp.com/',
   'https://tech-blog-abdalla.herokuapp.com/',

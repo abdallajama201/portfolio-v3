@@ -2,6 +2,7 @@ import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';  
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
+import Tooltip from '@mui/material/Tooltip';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import DescriptionIcon from '@mui/icons-material/Description';
@@ -23,13 +24,19 @@ import sequelize from '../../icons/sequelize.png'
 import '../../styles/Home.scss'
  
 export default function Home() {
-
-  const keySkillAreas = ['Backend','Frontend','Data','Methodology','Collaboration',]
+  // const skyline = 'https://cdn.jsdelivr.net/gh/abdallajama201/portfolio-v3@main/src/img/skyline.jpg';
+  const keySkillAreas = ['Backend','Frontend','Data','Methodology','Collaboration',];
 
   const keySkills = [
     [javascript,jquery,nodejs,express,],
     [css3,html5,bootstrap,sass,react,handlebars,],
     [mysql,sequelize,graphql,mongodb,],
+  ]
+
+  const keySkillName = [
+    ['Javascript ES6+','Jquery','Node.js','Express.js',],
+    ['CSS3','HTML5','Bootstrap','Sass','React.js','Handlebars.js',],
+    ['MySQL','Sequelize','Graphql','MongoDB',],
   ]
  
   const aboutMe = [
@@ -68,10 +75,12 @@ export default function Home() {
           <CardContent>
             <Typography variant='h4' sx={{ fontWeight: 'bold', textAlign: 'center' }}>Key Skill Sets</Typography>
             {keySkills.map((skill, index) => 
-              <Grid container item xs={2} sm={4} md={20} direction="row" justifyContent="left">
+              <Grid key={index} container item xs={2} sm={4} md={20} direction="row" justifyContent="left">
                 <Typography variant='h6' id='section'>{keySkillAreas[index]}: </Typography>
-                {skill.map((icon, index) => 
-                  <img src={icon} id='icon' alt=''></img>
+                {skill.map((icon, index1) =>
+                  <Tooltip key={index1} title={(keySkillName[index])[index1]}>
+                    <img src={icon} id='icon' alt=''></img>
+                  </Tooltip>
                 )}
               </Grid>
             )}

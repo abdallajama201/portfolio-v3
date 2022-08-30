@@ -8,6 +8,7 @@ $transition: all 250ms ease;
 
 #poster {
   background-color: var(--poster-background);
+  margin: 20px 0px;
 }
 
 #skyline {
@@ -20,7 +21,7 @@ a {
   color: black;
 }
 
-#links {
+#links { 
   transition: $transition;
 
   &:hover {

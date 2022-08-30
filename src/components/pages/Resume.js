@@ -66,11 +66,11 @@ export default function Resume() {
         </Tooltip>
       </a>
       {sections.map((section, index1) =>
-        <Card id='resume-section'>
+        <Card key={index1} id='resume-section'>
           <CardContent>
             <Typography variant='h5'>{headings[index1]}</Typography>
             {section.map((point, index2) =>
-              <Typography>{point}</Typography>
+              <Typography key={index2}>{point}</Typography>
             )}
           </CardContent>
         </Card>

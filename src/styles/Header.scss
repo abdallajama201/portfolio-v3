@@ -2,6 +2,7 @@
 
 #grid-header {
   background-color: var(--header-background);
+  width: 100%;
 }
 
 #portrait {
@@ -11,7 +12,7 @@
   border-radius: 100%;
   background: linear-gradient(to right, var(--portrait-left), var(--portrait-right));
 
-  &:hover {
+  &:hover { 
     animation: shake 0.5s;
     animation-iteration-count: infinite;
   }
