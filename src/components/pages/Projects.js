@@ -22,41 +22,43 @@ const images = [image1, image2, image3, image4, image5, image6, image7];
 
 const description = [
   [
-    'A menu app platform.',
     'Backend: Express.js, MongoDB, GraphQL',
     'Frontend: React.js',
   ],
   [
-    'An app for setting up and tracking playdates for your pet.',
     'Backend: Express.js, MySQL, Node.js',
     'Frontend: Handlebars.js, Bootstrap',
   ],
   [
-    'A CMS style blog site.',
     'Backend: Express.js, MySQL, Node.js',
     'Frontend: Handlebars.js, Bootstrap',
   ],
   [
-    'A simple weather app that provides current weather and future forecasts globally.',
     'Backend: Third-party API provided by OpenWeather',
     'Frontend: Bootstrap and local storage on browser for persistent data',
   ],
   [
-    'A back end set of APIs for an e-commerce site powered by Express.js and MySQL.',
-    'The application can handle CRUD operations for organizing products, categories and tags.',
     'Backend: Express.js, MySQL, Node.js',
+    '',
   ],
   [
-    'An API for running CRUD operations on social network data.',
     'Backend: Express.js, MongoDB, Mongoose ODM',
     '',
   ],
   [
-    'A command line program that generates a custom README.md file.',
     'Backend: Node.js',
     '',
   ],
 ];
+const outline = [
+  'The internet provides a great opportunity for restaurants to grow. This web app provides an online ordering system for any restaurant. End users can sign up, add items to their cart, checkout and pay through a Stripe integration as well as save their previous orders.',
+  'Some pets suffer when in social isolation. This web app allows a user to find playdates for their pets. A user can find or schedule playdates for their pets.',
+  'A CMS style blog site similar to wordpress. Users can sign up, add blog posts, view blog posts of others and add comments to any post. A simple way for writers to publish online, where content is hosted in a MySQL database on AWS via Heroku.',
+  'A Weather Dashboard that employs third party APIs to provide current weather as well as future forecasts up to five days out. A lightweight implementation using only client side javascript.',
+  'All E-commerce sites need a backend that connects to a database in order to store data. This backend app provides a set of Restful API endpoints that can add, modify or delete product, categories and product tags.',
+  'Social network apps need a way to deal with large amounts of unstructured data. This backend app provides API endpoints that can provide CRUD operations for a non-relational database (MongoDB). The main benefit of the app is scalability.',
+  'This app is a command line application that generates a README.md file from information provided by the user. This project provides a quick way to take in all the information needed for a README and puts it into markdown format and creates a file.',
+]
 const github = [
   'https://github.com/Wingky1208/Menu-App',
   'https://github.com/abdallajama201/pet-playdate',
@@ -106,12 +108,14 @@ export default function Projects() {
       <Grid id='grid-home' container item xs={2} sm={4} md={20} direction="row" justifyContent="center">
         {projectNames.map((name, index) =>
           <Card key={index} id='projects'>
-            <CardHeader title={projectNames[index]} sx={{ textAlign: 'center' }}></CardHeader>
+            <CardContent>
+              <Typography variant='h5' sx={{ textAlign: 'center', fontWeight: 'bold' }}>{projectNames[index]}</Typography>
+              <Typography variant='body1' sx={{ textAlign: 'justified' }}>{outline[index]}</Typography>
+            </CardContent>
             <CardMedia id='card-image' component="img" height="300" image={images[index]} alt={name}></CardMedia>
             <CardContent>
               <Typography variant='body1'>{(description[index])[0]}</Typography>
               <Typography variant='body1'>{(description[index])[1]}</Typography>
-              <Typography variant='body1'>{(description[index])[2]}</Typography>
             </CardContent>
             <CardActions disableSpacing>
               <Tooltip title={githubTip[index]}>
