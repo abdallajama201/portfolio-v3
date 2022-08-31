@@ -5,6 +5,7 @@ import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import CardActions from '@mui/material/CardActions';
 import Typography from '@mui/material/Typography';
+import Tooltip from '@mui/material/Tooltip';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LaunchIcon from '@mui/icons-material/Launch';
 import image1 from '../../img/hungry-time.png';
@@ -75,6 +76,25 @@ const deployed = [
   'https://github.com/abdallajama201/Professional-README-Generator',
 ]
  
+const githubTip = [
+  'github.com/Wingky1208/Menu-App',
+  'github.com/abdallajama201/pet-playdate',
+  'github.com/abdallajama201/Tech-Blog',
+  'github.com/abdallajama201/Weather-Dashboard',
+  'github.com/abdallajama201/E-commerce-Back-End',
+  'github.com/abdallajama201/Social-Network-API',
+  'github.com/abdallajama201/Professional-README-Generator',
+]
+const deployedTip = [
+  'hungrier-time.herokuapp.com/',
+  'pet-playdate-app.herokuapp.com/',
+  'tech-blog-abdalla.herokuapp.com/',
+  'abdallajama201.github.io/Weather-Dashboard/',
+  'github.com/abdallajama201/E-commerce-Back-End',
+  'github.com/abdallajama201/Social-Network-API',
+  'github.com/abdallajama201/Professional-README-Generator',
+]
+ 
 export default function Projects() {
   return (
     <Grid id='grid-project' container item direction="column" justifyContent="center">
@@ -94,8 +114,12 @@ export default function Projects() {
               <Typography variant='body1'>{(description[index])[2]}</Typography>
             </CardContent>
             <CardActions disableSpacing>
-              <a href={github[index]} target="_blank"><GitHubIcon></GitHubIcon></a>
-              <a href={deployed[index]} target="_blank"><LaunchIcon></LaunchIcon></a>
+              <Tooltip title={githubTip[index]}>
+                <a href={github[index]} target="_blank"><GitHubIcon id='link-icon'></GitHubIcon></a>
+              </Tooltip>
+              <Tooltip title={deployedTip[index]}>
+                <a href={deployed[index]} target="_blank"><LaunchIcon id='link-icon'></LaunchIcon></a>
+              </Tooltip>
             </CardActions>
           </Card>
         )}

@@ -24,7 +24,6 @@ import sequelize from '../../icons/sequelize.png'
 import '../../styles/Home.scss'
  
 export default function Home() {
-  // const skyline = 'https://cdn.jsdelivr.net/gh/abdallajama201/portfolio-v3@main/src/img/skyline.jpg';
   const keySkillAreas = ['Backend','Frontend','Data','Methodology','Collaboration',];
 
   const keySkills = [
